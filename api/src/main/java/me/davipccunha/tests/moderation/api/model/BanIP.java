@@ -9,8 +9,10 @@ public class BanIP extends Penalty {
     public String getRestrictionMessage() {
         return String.format(
                 "§cVocê foi banido do servidor." +
-                        "\n\n§7Banido por: §f%s." +
-                        "\n§7Motivo: §f%s",
-                this.getExecutorName(), this.getReason());
+                        "\n\n§7Banido por: §f%s" +
+                        "\n§7Motivo: §f%s" +
+                        "\n§7Data: §f%s" +
+                        "\n§7Expira em: §fNunca",
+                this.getExecutorName(), this.getReason(), this.getFormattedCreatedDate());
     }
 }

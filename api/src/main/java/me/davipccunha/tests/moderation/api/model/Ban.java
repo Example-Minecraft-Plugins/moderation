@@ -18,8 +18,9 @@ public class Ban extends Penalty {
                 "§cVocê está banido do servidor" +
                         "\n\n§7Banido por: §f%s" +
                         "\n§7Motivo: §f%s" +
+                        "\n§7Data: §f%s" +
                         "\n§7Expira em: §f%s",
 
-                this.getExecutorName(), this.getReason(), permanent ? "Nunca" : this.getFormattedRemainingTime());
+                this.getExecutorName(), this.getReason(), this.getFormattedCreatedDate(), permanent ? "Nunca" : this.getFormattedRemainingTime());
     }
 }
