@@ -53,7 +53,7 @@ public class ModerationPlugin extends JavaPlugin {
         getCommand("dessilenciar").setExecutor(new DessilenciarCommand(this));
         getCommand("banir").setExecutor(new BanirCommand(this));
         getCommand("desbanir").setExecutor(new DesbanirCommand(this));
-        getCommand("checarpunicao").setExecutor(new ChecarpunicaoCommand(this));
+        getCommand("checarpunicao").setExecutor(new ChecarPunicaoCommand(this));
     }
 
     private void loadCaches() {

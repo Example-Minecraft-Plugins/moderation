@@ -11,7 +11,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 @RequiredArgsConstructor
-public class ChecarpunicaoCommand implements CommandExecutor {
+public class ChecarPunicaoCommand implements CommandExecutor {
     private final ModerationPlugin plugin;
 
     @Override
